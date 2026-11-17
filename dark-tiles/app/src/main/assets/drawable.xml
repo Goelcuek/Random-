@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <version>1</version>
+    <category title="All" />
+    <item drawable="play_store" />
+    <item drawable="chrome" />
+    <item drawable="opera" />
+    <item drawable="duolingo" />
+    <item drawable="youtube" />
+    <item drawable="gmail" />
+    <item drawable="google_maps" />
+    <item drawable="google_photos" />
+    <item drawable="google" />
+    <item drawable="google_drive" />
+    <item drawable="gemini" />
+    <item drawable="whatsapp" />
+    <item drawable="telegram" />
+    <item drawable="instagram" />
+    <item drawable="spotify" />
+    <item drawable="netflix" />
+    <item drawable="discord" />
+    <item drawable="x" />
+    <item drawable="tiktok" />
+    <item drawable="facebook" />
+    <item drawable="g_calendar" />
+    <item drawable="g_calculator" />
+    <item drawable="g_clock" />
+    <item drawable="g_messages" />
+    <item drawable="g_phone" />
+    <item drawable="g_contacts" />
+    <item drawable="g_files" />
+    <item drawable="settings" />
+    <item drawable="honor_phone" />
+    <item drawable="honor_contacts" />
+    <item drawable="honor_messages" />
+    <item drawable="honor_camera" />
+    <item drawable="honor_gallery" />
+    <item drawable="honor_music" />
+    <item drawable="honor_clock" />
+    <item drawable="honor_calendar" />
+    <item drawable="honor_calculator" />
+    <item drawable="honor_notes" />
+    <item drawable="honor_files" />
+    <item drawable="honor_weather" />
+    <item drawable="honor_settings" />
+    <item drawable="honor_health" />
+</resources>
