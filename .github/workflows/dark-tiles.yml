@@ -3,6 +3,8 @@ on:
   push:
     paths: ['dark-tiles/**', '.github/workflows/dark-tiles.yml']
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,3 +18,9 @@ jobs:
       - run: gradle assembleDebug
       - uses: actions/upload-artifact@v4
         with: { name: DarkTiles-apk, path: dark-tiles/app/build/outputs/apk/debug/*.apk }
+      - name: Publish release
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          cp app/build/outputs/apk/debug/app-debug.apk DarkTiles.apk
+          gh release delete dark-tiles-latest --cleanup-tag -y || true
+          gh release create dark-tiles-latest DarkTiles.apk --title "Dark Tiles icon pack" --notes "Dark squircle icon pack APK" --repo "${{ github.repository }}"
